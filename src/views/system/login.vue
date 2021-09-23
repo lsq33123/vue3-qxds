@@ -39,7 +39,7 @@ export default {
 
     const onGetCode = () => {
       sendSmsCode({ mobile: state.username }).then((res) => {
-        console.log('res:', res)
+        console.log('res3:', res)
       })
     }
 
