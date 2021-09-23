@@ -78,3 +78,9 @@ export const addMenuList = (params: any): HttpResponse<any> => request.post('/me
 // request.put('/role/updateRoleStatus/' + id, {status: status})
 // 更新菜单
 export const updateMenu = (id: any, params: any): HttpResponse<any> => request.put('/menu/updateMenu/' + id, params)
+
+//===============================================================
+//获取短信验证码
+export const sendSmsCode = (body: any) => request.post('/login/sendSmsCode', body)
+//短信验证码登录
+export const getVerifySmsCode = (body: any) => request.post('/login/verifySmsCode', body)

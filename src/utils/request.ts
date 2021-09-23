@@ -2,9 +2,10 @@ import axios from 'axios'
 import { BASE_URL } from '@/config'
 import { isEmpty } from './validate'
 import { getCookie } from './cookie'
-import { ElMessageBox,ElMessage } from 'element-plus'
+import { ElMessage } from 'element-plus'
+import { ElMessageBox } from 'element-plus'
 import router from '@/router/index'
-import qs from 'qs'   
+// import qs from 'qs'
 
 export const request = axios.create({
   baseURL: BASE_URL,
@@ -37,8 +38,9 @@ request.interceptors.response.use(
   (res) => res.data,
   (err) => {
     if (!err.response) {
-      ElMessage.error('服务器故障~')
-      return 
+      // ElMessage.error('服务器故障~')
+      ElMessage('服务器故障~')
+      return
     }
     if (err.response.status == 401) {
       ElMessageBox.confirm('登录状态已过期，您可以继续留在该页面，或者重新登录', '系统提示', {

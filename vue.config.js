@@ -4,10 +4,7 @@ const resolve = (dir) => path.join(__dirname, dir) // 路径
 const IS_PROD = ['production', 'prod'].includes(process.env.NODE_ENV)
 const IS_DEV = ['development'].includes(process.env.NODE_ENV)
 module.exports = {
-    // 在npm run build 或 yarn build 时 ，生成文件的目录名称（要和baseUrl的生产环境路径一致）（默认dist）
-    outputDir: 'dist',
-    // 用于放置生成的静态资源 (js、css、img、fonts) 的；（项目打包之后，静态资源会放在这个文件夹下）
-    assetsDir: 'static',
+
   devServer: {
     open: true,
 

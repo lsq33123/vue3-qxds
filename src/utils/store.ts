@@ -1,7 +1,7 @@
 /** @format */
 import { isEmpty } from './validate'
 
-const KEYNAME = 'lsq1-' //名字的key
+const KEYNAME = 'lsq-qxds-' //名字的key
 const DEFAULTPOSITION = 'session' //默认存储位置
 
 // type NameType = {
