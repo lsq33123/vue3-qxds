@@ -1,7 +1,9 @@
 $TopBarHeight:60px; //顶部状态栏高度
-$ASideWidth:240px ; //左侧菜单栏展开宽度
+$ASideMaxWidth:240px ; //左侧菜单栏展开宽度 最大
+$ASideMinWidth:64px ; //左侧菜单栏展开宽度 最小
 
 :export {
   TopBarHeight:$TopBarHeight;
-  ASideWidth:$ASideWidth;
+  ASideMaxWidth:$ASideMaxWidth;
+  ASideMinWidth:$ASideMinWidth;
 }

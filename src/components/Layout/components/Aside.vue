@@ -18,7 +18,7 @@
       @open="handleOpen"
       @close="handleClose"
     >
-      <!-- <el-submenu index="1">
+      <!-- <el-sub-menu index="1">
         <template #title>
           <i class="el-icon-s-home"></i>
           <span>导航一</span>
@@ -27,7 +27,7 @@
         <el-menu-item index="/demo2">选项2</el-menu-item>
         <el-menu-item index="/demo3">选项3</el-menu-item>
         <el-menu-item index="/demo4">选项4</el-menu-item>
-      </el-submenu> -->
+      </el-sub-menu> -->
       <el-menu-item index="/demo5">
         <i class="el-icon-menu"></i>
         <template #title>页面5</template>
@@ -36,7 +36,7 @@
         <i class="el-icon-menu"></i>
         <template #title>页面6</template>
       </el-menu-item>
-      <el-submenu index="system">
+      <el-sub-menu index="system">
         <template #title>
           <i class="el-icon-s-home"></i>
           <span>系统设置</span>
@@ -45,8 +45,8 @@
         <el-menu-item index="/role">角色管理</el-menu-item>
         <el-menu-item index="/user">用户管理</el-menu-item>
         <el-menu-item index="/dict">字典管理</el-menu-item>
-      </el-submenu>
-      <!-- <el-submenu index="2">
+      </el-sub-menu>
+      <!-- <el-sub-menu index="2">
         <template #title>
           <i class="el-icon-location"></i>
           <span>导航二</span>
@@ -55,8 +55,8 @@
         <el-menu-item index="/demo2">选项2</el-menu-item>
         <el-menu-item index="/demo3">选项3</el-menu-item>
         <el-menu-item index="/demo4">选项4</el-menu-item>
-      </el-submenu>
-      <el-submenu index="3">
+      </el-sub-menu>
+      <el-sub-menu index="3">
         <template #title>
           <i class="el-icon-location"></i>
           <span>导航三</span>
@@ -65,8 +65,8 @@
         <el-menu-item index="/demo2">选项2</el-menu-item>
         <el-menu-item index="/demo3">选项3</el-menu-item>
         <el-menu-item index="/demo4">选项4</el-menu-item>
-      </el-submenu>
-      <el-submenu index="4">
+      </el-sub-menu>
+      <el-sub-menu index="4">
         <template #title>
           <i class="el-icon-location"></i>
           <span>导航四</span>
@@ -75,7 +75,7 @@
         <el-menu-item index="/demo2">选项2</el-menu-item>
         <el-menu-item index="/demo3">选项3</el-menu-item>
         <el-menu-item index="/demo4">选项4</el-menu-item>
-      </el-submenu> 
+      </el-sub-menu> 
       <el-menu-item index="/demo1">
         <i class="el-icon-menu"></i>
         <template #title>页面1</template>

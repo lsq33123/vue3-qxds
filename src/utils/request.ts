@@ -50,21 +50,7 @@ request.interceptors.response.use(
     const msg = res.data.message || errorCode['default'] // 获取错误信息
     console.log('res:', res)
     console.log('msg:', msg)
-    if (code === 8) {
-      ElMessage({ message: msg, type: 'error' })
-      return Promise.reject('参数错误~')
-    } else {
-      return res.data
-    }
-  },
-  (err) => {
-    debugger
-    if (!err.response) {
-      // ElMessage.error('服务器故障~')
-      ElMessage({ type: 'error', message: '服务器故障~' })
-      return
-    }
-    if (err.response.status == 401) {
+    if (code === 200) {
       ElMessageBox.confirm('登录状态已过期，您可以继续留在该页面，或者重新登录', '系统提示', {
         confirmButtonText: '重新登录',
         cancelButtonText: '取消',
@@ -86,7 +72,20 @@ request.interceptors.response.use(
         //    location.reload() // 为了重新实例化vue-router对象 避免bug
         // })
       })
+    } else if (code === 8) {
+      ElMessage({ message: msg, type: 'error' })
+      return Promise.reject('参数错误~')
+    } else {
+      return res.data
     }
+  },
+  (err) => {
+    if (!err.response) {
+      // ElMessage.error('服务器故障~')
+      ElMessage({ type: 'error', message: '服务器故障~' })
+      return
+    }
+
     return Promise.reject(err)
   }
 )

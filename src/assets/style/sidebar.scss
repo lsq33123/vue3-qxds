@@ -1,0 +1,33 @@
+
+@import './config.scss';
+
+
+
+
+.app-container{
+.side-container{
+  width: $ASideMaxWidth;
+}
+
+
+.main-container {
+
+
+  .main-wrap {
+    padding: 0;
+    transition: all 0.5s ease;
+  }
+}
+  .open-sidebar{
+    
+  }
+
+
+  .hide-sidebar{
+    // width: $ASideMinWidth !important;
+
+    .side-container{
+      width: $ASideMinWidth !important;
+    }
+  }
+}
