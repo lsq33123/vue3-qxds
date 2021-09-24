@@ -1,5 +1,5 @@
 <template>
-  <div class="header flex flex-between">
+  <div class="header flex-c flex-justify-between">
     <div></div>
     <div>
       <el-button type="text" @click="onExit">退出</el-button>

@@ -1,5 +1,5 @@
 <template>
-  <div v-if="isShow" class="pagination-container flex flex-between" :style="{ padding: padding }">
+  <div v-if="isShow" class="pagination-container flex-c flex-justify-between" :style="{ padding: padding }">
     <div>
       <slot name="left"></slot>
     </div>

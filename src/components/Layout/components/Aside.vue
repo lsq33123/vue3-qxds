@@ -18,7 +18,7 @@
       @open="handleOpen"
       @close="handleClose"
     >
-      <el-submenu index="1">
+      <!-- <el-submenu index="1">
         <template #title>
           <i class="el-icon-s-home"></i>
           <span>导航一</span>
@@ -27,7 +27,7 @@
         <el-menu-item index="/demo2">选项2</el-menu-item>
         <el-menu-item index="/demo3">选项3</el-menu-item>
         <el-menu-item index="/demo4">选项4</el-menu-item>
-      </el-submenu>
+      </el-submenu> -->
       <el-menu-item index="/demo5">
         <i class="el-icon-menu"></i>
         <template #title>页面5</template>

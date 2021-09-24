@@ -1,25 +1,53 @@
 
+@import './flex.scss';
+@import './short.scss';
+
 html,body{
   margin: 0;
   padding: 0;
-  
+  box-sizing: border-box;
 }
 
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
 
 #app {
   width: 100vw;
   height: 100vh;
 }
-.flex{
-  display: flex;
+
+//滚动条样式
+::-webkit-scrollbar {
+  width: 10px; //纵向宽度
+  height: 10px; //横向高度
 }
-.flex-center{
-  justify-content: center;
-  align-items: center;
+
+::-webkit-scrollbar-track {
+  //底色
+  background-color: transparent;
 }
-.flex-between{
-  align-items: center;
-  justify-content: space-between;
+
+::-webkit-scrollbar-corner {
+  //角落箭头区域
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  //滚动条颜色
+  background-color: #ccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ddd
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #ccc
 }
 
 
