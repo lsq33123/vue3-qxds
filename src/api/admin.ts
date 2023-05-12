@@ -1,10 +1,8 @@
 /** @format */
-
 import { request } from '@/utils/request'
-import { HttpResponse } from '@/interface'
 import { isAvailable, setStore } from '@/utils/store'
+import { HttpResponse } from '@/interface'
 const EXPIRED_TIME = 60 * 1 //1小时过期
-
 //获取token
 export const getToken = (body: any): HttpResponse<any> => request.post('/token/login', body)
 // 获取获取用户信息 及相关权限菜单  user_name为登录账号
@@ -78,9 +76,3 @@ export const addMenuList = (params: any): HttpResponse<any> => request.post('/me
 // request.put('/role/updateRoleStatus/' + id, {status: status})
 // 更新菜单
 export const updateMenu = (id: any, params: any): HttpResponse<any> => request.put('/menu/updateMenu/' + id, params)
-
-//===============================================================
-//获取短信验证码
-export const sendSmsCode = (body: any) => request.post('/login/sendSmsCode', body)
-//短信验证码登录
-export const getVerifySmsCode = (body: any) => request.post('/login/verifySmsCode', body)

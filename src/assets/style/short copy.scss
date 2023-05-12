@@ -1,0 +1,75 @@
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.block {
+  display: block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+@each $number in 5, 8, 10, 20 ,50{
+  .m#{$number} {
+    margin: #{$number}px;
+  }
+  .mt#{$number} {
+    margin-top: #{$number}px;
+  }
+  .mr#{$number} {
+    margin-right: #{$number}px;
+  }
+  .mb#{$number} {
+    margin-bottom: #{$number}px;
+  }
+  .ml#{$number} {
+    margin-left: #{$number}px;
+  }
+  .p#{$number} {
+    padding: #{$number}px;
+  }
+  .pt#{$number} {
+    padding-top: #{$number}px;
+  }
+  .pr#{$number} {
+    padding-right: #{$number}px;
+  }
+  .pt#{$number} {
+    padding-bottom: #{$number}px;
+  }
+  .pl#{$number} {
+    padding-left: #{$number}px;
+  }
+}
+
+@each $number in 50, 100, 150, 200, 250, 300, 350, 400, 450, 500 {
+  .w#{$number} {
+    width: #{$number}px;
+  }
+  .h#{$number} {
+    height: #{$number}px;
+  }
+}
+@each $number in 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 {
+  .wp#{$number} {
+    width: #{$number + "%"};
+  }
+  .hp#{$number} {
+    height: #{$number + "%"};
+  }
+}
+
+@each $number in 12, 13, 14, 15, 16, 18, 20 {
+  .fz#{$number} {
+    font-size: #{$number}px;
+  }
+}

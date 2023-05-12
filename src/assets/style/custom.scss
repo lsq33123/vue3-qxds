@@ -1,0 +1,14 @@
+// 链接样式
+.text-btn{
+  color: #1890ff;
+  white-space:nowrap;
+  &:hover {
+    color: #46a6ff;
+    cursor: pointer;
+  }
+}
+//金钱样式
+.money-sty {
+  font-weight: bold !important;
+  color: rgba(211, 37, 37, 0.85) !important;
+}

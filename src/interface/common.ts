@@ -1,8 +1,7 @@
 /** @format */
 
 export type HttpResponse<T> = Promise<{
-  code: number
-  msg: string
-  timestamp: number
-  data?: T
+  errcode: number
+  errmsg: string
+  result?: T
 }>

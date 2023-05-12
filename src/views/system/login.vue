@@ -1,7 +1,7 @@
 <template>
   <div class="container flex-cc">
     <div class="login-wrap-form">
-      <el-row class="title"> XXXXX </el-row>
+      <el-row class="title"> 优胜汽修大师 </el-row>
       <el-row class="item">
         <el-input v-model="username" placeholder="请输入账号/手机号"></el-input>
       </el-row>
